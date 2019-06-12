@@ -39,7 +39,7 @@ public class CodersGuruTest {
 
         for (String linkAdress : linklist) {
             driver.get(linkAdress);
-            if (linkAdress.contains(".e")) {
+            if (linkAdress.contains("e")) {
                 System.out.println(linkAdress);
             }
         }
