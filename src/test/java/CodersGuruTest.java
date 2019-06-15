@@ -35,18 +35,19 @@ public class CodersGuruTest {
             String name = link.getAttribute("href");
             assertTrue(linklist.add(name));
 
-        }
+            }
 
         for (String linkAdress : linklist) {
             driver.get(linkAdress);
             if (linkAdress.contains("e")) {
                 System.out.println(linkAdress);
             }
+
         }
 
     }
 
-    @After
+    @After                                // trzeba jeszcze ubic process wizarda zakadania konta w ubuntu, ale to pozniej:)
     public void tearDown () {
         driver.close();
         driver.quit();
